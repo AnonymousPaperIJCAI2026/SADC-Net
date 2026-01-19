@@ -127,7 +127,9 @@ For example, to test on the Brain MRI with k=4, simply run:
 
 
 ## 🖼️ Visualization
-<center><img src="images/visual.png "width="70%"></center>
+<center><img src="images/3.png "width="70%"></center>
+<center><img src="images/4.png "width="70%"></center>
+<center><img src="images/5.png "width="70%"></center>
 
 ## 🙏 Acknowledgement
 We borrow some codes from [OpenCLIP](https://github.com/mlfoundations/open_clip), and [April-GAN](https://github.com/ByChelsea/VAND-APRIL-GAN).
