@@ -1,4 +1,3 @@
-# SADC-Net
 <div align="left"> 
 <h1> 📌 SADC-Net </h1>
 <h3>Few-Shot Anomaly Detection with LLM-Guided Prompts and Multi-Attention Fusion</h3>
