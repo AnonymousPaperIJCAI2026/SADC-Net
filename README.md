@@ -4,7 +4,7 @@
 </div>
 
 
-<div align="center"> <img src="images/clipmpcad.png" width="80%"> </div>
+<div align="center"> <img src="images/1.png" width="80%"> </div>
 
 <div align="justify">
 
@@ -15,7 +15,7 @@ Cross-domain anomaly detection is critical in real-world inspection, where a mod
 
 📴**Keywords**: Few-Shot, Large Vision-Language Model, Anomaly Classification and Segmentation
 
-<div align="center"> <img src="images/madff.png " width="60%"> </div>
+<div align="center"> <img src="images/2.png " width="60%"> </div>
 
 
 ## 🚀 Get Started
