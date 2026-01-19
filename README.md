@@ -1,6 +1,6 @@
 <div align="left"> 
 <h1> 📌 SADC-Net </h1>
-<h3>Few-Shot Anomaly Detection with LLM-Guided Prompts and Multi-Attention Fusion</h3>
+<h3>SADC-Net: Cross-Domain Anomaly Detection with Semantic Anchors and Drift Control</h3>
 </div>
 
 
