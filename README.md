@@ -50,7 +50,7 @@ Single NVIDIA A40 GPU
 
     
 
-3. Place it within the master directory `data` and unzip the dataset.
+2. Place it within the master directory `data` and unzip the dataset.
 
     ```
     tar -xvf Liver.tar.gz
