@@ -79,22 +79,19 @@ code
 │  ├─ tokenizer.py
 │  └─ transformer.py
 ├─ data
-│  ├─ Brain_AD
+│  ├─ Mvtec3D
 │  │  ├─ valid
 │  │  └─ test
 │  ├─ ...
-│  └─ Retina_RESC_AD
+│  └─ Visa
 │     ├─ valid
 │     └─ test
 ├─ dataset
 │  ├─ fewshot_seed
-│  │  ├─ Brain
-│  │  ├─ ...
-│  │  └─ Retina_RESC
+│  │  └─ Mvtec3D
 │  ├─ medical_few.py
 │  └─ medical_zero.py
 ├─ loss.py
-├─ prompt.py
 ├─ readme.md
 ├─ train_few.py
 ├─ train_zero.py
