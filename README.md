@@ -13,7 +13,7 @@ Cross-domain anomaly detection is critical in real-world inspection, where a mod
 
 </div>
 
-📴**Keywords**: Few-Shot, Large Vision-Language Model, Anomaly Classification and Segmentation
+📴**Keywords**: Zero-/Few-Shot, Cross domian, Large Vision-Language Model, Anomaly Classification and Segmentation
 
 <div align="center"> <img src="images/2.png " width="100%"> </div>
 
@@ -38,7 +38,7 @@ Cross-domain anomaly detection is critical in real-world inspection, where a mod
 Single NVIDIA A40 GPU
 
 ## 📦 Pretrained model
-- CLIP: https://openaipublic.azureedge.net/clip/models/3035c92b350959924f9f00213499208652fc7ea050643e8b385c2dac08641f02/ViT-L-14-336px.pt
+- CLIP: ##################################################################
 
     👉 Download and put it under `CLIP/ckpt` folder
 
@@ -53,15 +53,7 @@ Single NVIDIA A40 GPU
 2. Place it within the master directory `data` and unzip the dataset.
 
     ```
-    tar -xvf Liver.tar.gz
-    tar -xvf Brain.tar.gz
-    tar -xvf Histopathology_AD.tar.gz
-    tar -xvf Retina_RESC.tar.gz
-    tar -xvf Retina_OCT2017.tar.gz
-    tar -xvf Chest.tar.gz
-    tar -xvf Mvtec.tar.gz
-    tar -xvf MPDD.tar.gz
-    tar -xvf BTAD.tar.gz
+    
     ```
 
 
@@ -113,15 +105,15 @@ code
 
 ## ⚡ Quick Start
 
-`python test_few.py --obj $target-object --shot $few-shot-number`
+`###########################`
 
 For example, to test on the Brain MRI with k=4, simply run:
 
-`python test_few.py --obj Brain --shot 4`
+`###########################`
 
 ### Training
 
-`python train_few.py --obj $target-object --shot $few-shot-number`
+`################################`
 
 
 
