@@ -44,7 +44,7 @@ Single NVIDIA A40 GPU
 
 
 
-## 🏥🏭 Medical and Industrial Anomaly Detection Benchmark
+## 🏥🏭 Medical and Industrial Anomaly Detection Benchmark(2D\3D)
 
 1. We will provide the pre-processed benchmark. Please download the following dataset
 
