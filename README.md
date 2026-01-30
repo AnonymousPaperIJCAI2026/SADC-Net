@@ -63,7 +63,6 @@ After the preparation work, the whole project should have the following structur
 ```
 code
 ├─ ckpt
-│  ├─ few-shot
 │  └─ zero-shot
 ├─ CLIP
 │  ├─ bpe_simple_vocab_16e6.txt.gz
@@ -82,6 +81,12 @@ code
 │  ├─ Mvtec3D
 │  │  ├─ valid
 │  │  └─ test
+│  ├─ BrainMRI
+│  │  ├─ valid
+│  │  └─ test
+│  ├─ Mvtec
+│  │  ├─ valid
+│  │  └─ test
 │  ├─ ...
 │  └─ Visa
 │     ├─ valid
@@ -95,6 +100,7 @@ code
 ├─ readme.md
 ├─ train_few.py
 ├─ train_zero.py
+├─ test.py
 └─ utils.py
 
 ```
@@ -102,15 +108,15 @@ code
 
 ## ⚡ Quick Start
 
-`###########################`
+`python test.py`
 
-For example, to test on the Brain MRI with k=4, simply run:
+For example, to test on the BrainMRI , simply run:
 
 `###########################`
 
 ### Training
 
-`################################`
+`python train_zero.py`
 
 
 
