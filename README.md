@@ -55,8 +55,7 @@ Single NVIDIA A40 GPU
     ```
     
     ```
-### Auxiliary-to-Target Protocol
-
+### <img src="images/A1.svg" width="22"> Auxiliary-to-Target Protocol <img src="images/T2.svg" width="22">
 We use a fixed auxiliary-to-target protocol throughout the paper.
 
 - **VisA** is used as the auxiliary domain when evaluating on **MVTec AD**.
