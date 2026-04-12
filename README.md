@@ -128,7 +128,59 @@ For example, to test on the BrainMRI , simply run:
 
 `python train_zero.py`
 
+## 🖼️ Visualization
 
+We provide qualitative visualizations to better illustrate the behavior of SADC-Net from three perspectives: module contribution, comparison with existing methods, and layer-wise representation hierarchy.
+
+### 1. Module Ablation Visualization
+
+We visualize the anomaly maps produced by different ablated variants of SADC-Net to show the effect of each key component on localization quality, noise suppression, and boundary consistency.
+
+<div align="center">
+  <img src="images/3.png" width="90%">
+</div>
+
+**Suggested figure layout:**  
+Input | Ground Truth | w/o Semantic Anchors | w/o Drift Control | w/o Multi-level Aggregation | Full Model
+
+**Takeaway.**  
+Removing key modules leads to noisier responses, less accurate boundaries, and weaker localization consistency, while the full model produces cleaner and more reliable anomaly maps.
+
+---
+
+### 2. Comparison with Existing Methods
+
+We further compare SADC-Net with representative existing methods on both industrial and medical benchmarks to demonstrate its robustness under cross-domain shift.
+
+<div align="center">
+  <img src="images/4.png" width="90%">
+</div>
+
+**Suggested figure layout:**  
+Input | Ground Truth | Method A | Method B | Method C | SADC-Net
+
+**Takeaway.**  
+Compared with previous methods, SADC-Net yields anomaly maps with fewer false activations, clearer structures, and better alignment with the ground-truth anomalous regions.
+
+---
+
+### 3. Layer-wise Hierarchical Visualization
+
+To better understand the role of hierarchical representations, we visualize the anomaly responses from different layers of the model.  
+This reveals how useful cues evolve from shallow to deep layers and explains why aggregating multi-level features is beneficial for robust anomaly localization.
+
+<div align="center">
+  <img src="images/5.png" width="90%">
+</div>
+
+**Suggested figure layout:**  
+Input | Ground Truth | Layer 6 | Layer 12 | Layer 18 | Layer 24 | Final Aggregation
+
+**Alternative layout:**  
+Input | Ground Truth | Shallow Layers | Middle Layers | Deep Layers | Final Map
+
+**Takeaway.**  
+Shallow layers mainly capture local textures and edges, intermediate layers highlight more structured anomaly patterns, and deeper layers provide more semantic but sometimes coarser responses. Their aggregation leads to more complete and stable anomaly localization.
 
 
 ## 🖼️ Visualization
