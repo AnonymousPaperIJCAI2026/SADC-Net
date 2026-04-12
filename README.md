@@ -189,12 +189,6 @@ Input | Ground Truth | Layer 6 | Layer 12 | Layer 18 | Layer 24 | Final
 
 These visualizations explain why SADC-Net places DCA at selected depths and how the full model achieves robust cross-domain anomaly localization.
 
-
-## 🖼️ Visualization
-<center><img src="images/3.png "width="70%"></center>
-<center><img src="images/4.png "width="70%"></center>
-<center><img src="images/5.png "width="70%"></center>
-
 ## 🙏 Acknowledgement
 We borrow some codes from [OpenCLIP](https://github.com/mlfoundations/open_clip), and [April-GAN](https://github.com/ByChelsea/VAND-APRIL-GAN).
 
