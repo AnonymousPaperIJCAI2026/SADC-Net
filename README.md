@@ -130,57 +130,64 @@ For example, to test on the BrainMRI , simply run:
 
 ## 🖼️ Visualization
 
-We provide qualitative visualizations to better illustrate the behavior of SADC-Net from three perspectives: module contribution, comparison with existing methods, and layer-wise representation hierarchy.
+We provide qualitative visualizations of SADC-Net from three perspectives: the effectiveness of our core modules, comparisons with existing methods, and layer-wise hierarchical responses across the ViT backbone.
 
-### 1. Module Ablation Visualization
+### 1. DCA and SAC Module Ablation
 
-We visualize the anomaly maps produced by different ablated variants of SADC-Net to show the effect of each key component on localization quality, noise suppression, and boundary consistency.
+We first visualize the effect of our two key components, **Drift-Controlled Adaptation (DCA)** and **Semantic Anchor Calibration (SAC)**, on anomaly localization under cross-domain shift.
 
 <div align="center">
-  <img src="images/3.png" width="90%">
+  <img src="images/3.png" width="88%">
 </div>
 
 **Suggested figure layout:**  
-Input | Ground Truth | w/o Semantic Anchors | w/o Drift Control | w/o Multi-level Aggregation | Full Model
+Input | Ground Truth | Baseline | + SAC | + DCA | SADC-Net
 
-**Takeaway.**  
-Removing key modules leads to noisier responses, less accurate boundaries, and weaker localization consistency, while the full model produces cleaner and more reliable anomaly maps.
+**What it shows:**  
+- **SAC** provides a more stable semantic reference and improves score calibration.  
+- **DCA** suppresses domain-induced visual drift and produces cleaner patch-level anomaly responses.  
+- Combining **DCA + SAC** yields the most reliable localization with fewer false activations and clearer anomalous boundaries.
 
 ---
 
-### 2. Comparison with Existing Methods
+### 2. Qualitative Comparison with Existing Methods
 
-We further compare SADC-Net with representative existing methods on both industrial and medical benchmarks to demonstrate its robustness under cross-domain shift.
+We further compare SADC-Net with representative prior methods on industrial and medical benchmarks to demonstrate its robustness under cross-domain anomaly detection.
 
 <div align="center">
-  <img src="images/4.png" width="90%">
+  <img src="images/4.png" width="88%">
 </div>
 
 **Suggested figure layout:**  
-Input | Ground Truth | Method A | Method B | Method C | SADC-Net
+Input | Ground Truth | WinCLIP | AnomalyCLIP / AA-CLIP / AF-CLIP | SADC-Net
 
-**Takeaway.**  
-Compared with previous methods, SADC-Net yields anomaly maps with fewer false activations, clearer structures, and better alignment with the ground-truth anomalous regions.
+**What it shows:**  
+Compared with previous methods, SADC-Net produces anomaly maps with:
+- fewer false positives under appearance shift,
+- clearer anomalous regions,
+- and better alignment with the ground-truth defect or lesion area.
 
 ---
 
 ### 3. Layer-wise Hierarchical Visualization
 
-To better understand the role of hierarchical representations, we visualize the anomaly responses from different layers of the model.  
-This reveals how useful cues evolve from shallow to deep layers and explains why aggregating multi-level features is beneficial for robust anomaly localization.
+To better understand why DCA is inserted at selected transformer depths, we visualize the anomaly responses from different layers of the ViT backbone.
 
 <div align="center">
-  <img src="images/5.png" width="90%">
+  <img src="images/5.png" width="88%">
 </div>
 
 **Suggested figure layout:**  
-Input | Ground Truth | Layer 6 | Layer 12 | Layer 18 | Layer 24 | Final Aggregation
+Input | Ground Truth | Layer 6 | Layer 12 | Layer 18 | Layer 24 | Final
 
-**Alternative layout:**  
-Input | Ground Truth | Shallow Layers | Middle Layers | Deep Layers | Final Map
+**What it shows:**  
+- **Layer 6** mainly captures local texture and edge cues, but remains noisy.  
+- **Layer 12** begins to form more coherent anomaly regions.  
+- **Layer 18** provides the most semantically aligned and well-localized responses.  
+- **Layer 24** becomes relatively diluted under domain shift.  
+- The final prediction benefits from aggregating complementary information across layers.
 
-**Takeaway.**  
-Shallow layers mainly capture local textures and edges, intermediate layers highlight more structured anomaly patterns, and deeper layers provide more semantic but sometimes coarser responses. Their aggregation leads to more complete and stable anomaly localization.
+These visualizations explain why SADC-Net places DCA at selected depths and how the full model achieves robust cross-domain anomaly localization.
 
 
 ## 🖼️ Visualization
