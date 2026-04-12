@@ -55,7 +55,17 @@ Single NVIDIA A40 GPU
     ```
     
     ```
+### Auxiliary-to-Target Protocol
 
+We use a fixed auxiliary-to-target protocol throughout the paper.
+
+- **VisA** is used as the auxiliary domain when evaluating on **MVTec AD**.
+- **MVTec AD** is used as the auxiliary domain for the other 12 target benchmarks: **VisA, MPDD, MVTec 3D-AD, BTAD, DAGM, DTD-Synthetic, ISIC, CVC-ClinicDB, CVC-ColonDB, Kvasir, BrainMRI, and Br35H**.
+
+| Auxiliary domain | Target benchmarks |
+| --- | --- |
+| VisA | MVTec AD |
+| MVTec AD | VisA, MPDD, MVTec 3D-AD, BTAD, DAGM, DTD-Synthetic, ISIC, CVC-ClinicDB, CVC-ColonDB, Kvasir, BrainMRI, Br35H |
 
 ## 📂 File Structure
 After the preparation work, the whole project should have the following structure:
