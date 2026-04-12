@@ -137,7 +137,7 @@ We provide qualitative visualizations of SADC-Net from three perspectives: the e
 We first visualize the effect of our two key components, **Drift-Controlled Adaptation (DCA)** and **Semantic Anchor Calibration (SAC)**, on anomaly localization under cross-domain shift.
 
 <div align="center">
-  <img src="images/3.png" width="88%">
+  <img src="images/.png" width="88%">
 </div>
 
 **Suggested figure layout:**  
@@ -155,7 +155,7 @@ Input | Ground Truth | Baseline | + SAC | + DCA | SADC-Net
 We further compare SADC-Net with representative prior methods on industrial and medical benchmarks to demonstrate its robustness under cross-domain anomaly detection.
 
 <div align="center">
-  <img src="images/4.png" width="88%">
+  <img src="images/.png" width="88%">
 </div>
 
 **Suggested figure layout:**  
@@ -173,9 +173,9 @@ Compared with previous methods, SADC-Net produces anomaly maps with:
 
 To better understand why DCA is inserted at selected transformer depths, we visualize the anomaly responses from different layers of the ViT backbone.
 
-<div align="center">
-  <img src="images/5.png" width="88%">
-</div>
+<center><img src="images/3.png "width="70%"></center>
+<center><img src="images/4.png "width="70%"></center>
+<center><img src="images/5.png "width="70%"></center>
 
 **Suggested figure layout:**  
 Input | Ground Truth | Layer 6 | Layer 12 | Layer 18 | Layer 24 | Final
