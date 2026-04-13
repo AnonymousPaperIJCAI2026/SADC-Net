@@ -136,7 +136,7 @@ We provide qualitative visualizations of SADC-Net from three perspectives: the e
 We first visualize the effect of our two key components, **Drift-Controlled Adaptation (DCA)** and **Semantic Anchor Calibration (SAC)**, on anomaly localization under cross-domain shift.
 
 <div align="center">
-  <img src="images/.png" width="88%">
+  <img src="images/ablation1.svg" width="88%">
 </div>
 
 **Suggested figure layout:**  
