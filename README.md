@@ -158,7 +158,7 @@ We further compare SADC-Net with representative prior methods on industrial and 
 </div>
 
 **Suggested figure layout:**  
-Input | Ground Truth | WinCLIP | AnomalyCLIP / AA-CLIP / AF-CLIP | SADC-Net
+Input | Ground Truth | AnomalyCLIP / MVFA-AD / AF-CLIP | SADC-Net
 
 **What it shows:**  
 Compared with previous methods, SADC-Net produces anomaly maps with:
