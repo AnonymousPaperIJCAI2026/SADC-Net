@@ -129,7 +129,7 @@ For example, to test on the BrainMRI , simply run:
 
 ## 🖼️ Visualization
 
-We provide qualitative visualizations of SADC-Net from three perspectives: the effectiveness of our core modules, comparisons with existing methods, and layer-wise hierarchical responses across the ViT backbone.
+We provide qualitative visualizations of SADC-Net from two perspectives: the effectiveness of our core modules and layer-wise hierarchical responses across the ViT backbone.
 
 ### 1. DCA and SAC Module Ablation
 
@@ -149,26 +149,7 @@ Input | Ground Truth | Baseline | + SAC | + DCA | SADC-Net
 
 ---
 
-### 2. Qualitative Comparison with Existing Methods
-
-We further compare SADC-Net with representative prior methods on industrial and medical benchmarks to demonstrate its robustness under cross-domain anomaly detection.
-
-<div align="center">
-  <img src="images/.png" width="88%">
-</div>
-
-**Suggested figure layout:**  
-Input | Ground Truth | AnomalyCLIP / MVFA-AD / AF-CLIP | SADC-Net
-
-**What it shows:**  
-Compared with previous methods, SADC-Net produces anomaly maps with:
-- fewer false positives under appearance shift,
-- clearer anomalous regions,
-- and better alignment with the ground-truth defect or lesion area.
-
----
-
-### 3. Layer-wise Hierarchical Visualization
+### 2. Layer-wise Hierarchical Visualization
 
 To better understand why DCA is inserted at selected transformer depths, we visualize the anomaly responses from different layers of the ViT backbone.
 
