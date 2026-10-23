@@ -156,9 +156,6 @@ To better understand why DCA is inserted at selected transformer depths, we visu
 <center><img src="images/4.png "width="70%"></center>
 <center><img src="images/5.png "width="70%"></center>
 
-**Suggested figure layout:**  
-Input | Ground Truth | Layer 6 | Layer 12 | Layer 18 | Layer 24 | Final
-
 **What it shows:**  
 - **Layer 6** mainly captures local texture and edge cues, but remains noisy.  
 - **Layer 12** begins to form more coherent anomaly regions.  
